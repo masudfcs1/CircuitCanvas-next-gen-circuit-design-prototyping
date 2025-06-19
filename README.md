@@ -6,13 +6,32 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+
+# CircuitCanvas – Next-Gen Circuit Design & Prototyping  
+
+![CircuitCanvas Demo](https://via.placeholder.com/800x400?text=CircuitCanvas+Demo)  
+*(Replace with actual screenshot/gif)*  
+
+**Design, simulate, and visualize electronic circuits in the browser.**  
+A modern, intuitive platform for engineers, hobbyists, and students to prototype ideas seamlessly.  
+
+---
+
+## 🚀 Features  
+- **Drag-and-Drop Interface** – Build circuits visually with customizable components.  
+- **Real-Time Simulation** – Test logic gates, analog circuits, or PCB layouts instantly.  
+- **Export & Share** – Generate schematics (SVG/PDF) or collaborate via shareable links.  
+- **Embeddable** – Integrate designs into docs with `CircuitCanvas.js` (example below).  
+
+```javascript
+// Example: Render a circuit in your app  
+import { Circuit } from 'circuitcanvas';  
+
+const myCircuit = new Circuit('#canvas', {  
+  components: ['resistor', 'capacitor', 'LED'],  
+  theme: 'dark'  
+});  
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
