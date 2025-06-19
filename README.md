@@ -14,7 +14,7 @@ npm run dev
 
 # CircuitCanvas – Next-Gen Circuit Design & Prototyping  
 
-![CircuitCanvas Demo](https://via.placeholder.com/800x400?text=CircuitCanvas+Demo)  
+![CircuitCanvas Demo](https://circuit-canvas.vercel.app/)  
 *(Replace with actual screenshot/gif)*  
 
 **Design, simulate, and visualize electronic circuits in the browser.**  
