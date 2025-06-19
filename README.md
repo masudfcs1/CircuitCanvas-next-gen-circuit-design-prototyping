@@ -7,6 +7,10 @@ First, run the development server:
 ```bash
 npm run dev
 ```
+![image](https://github.com/user-attachments/assets/f8afd88d-1355-4b0a-b99e-beefaef80776)
+![image](https://github.com/user-attachments/assets/a0c5efd9-6daf-413e-9c2a-124827ebfb5c)
+![image](https://github.com/user-attachments/assets/db877536-5d73-425b-9c69-ceb28757889b)
+![image](https://github.com/user-attachments/assets/33989712-1cde-4272-8820-0ea9f4694af9)
 
 # CircuitCanvas – Next-Gen Circuit Design & Prototyping  
 
