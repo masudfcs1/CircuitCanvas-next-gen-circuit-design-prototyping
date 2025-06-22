@@ -5,7 +5,6 @@ export default function Canvas() {
   return (
     <div>
       <DrawingCanvas/>
-      
     </div>
   )
 }
