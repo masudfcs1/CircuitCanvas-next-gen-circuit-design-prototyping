@@ -839,6 +839,7 @@ import {
   CircuitBoard,
   CloudLightning
 } from 'lucide-react';
+import Link from 'next/link';
 
 const CircuitCanvas: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -998,21 +999,21 @@ const CircuitCanvas: React.FC = () => {
             
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center space-x-8">
-                <a
+                {/* <a
                 href="#features"
                 className="hover:text-cyan-400 transition-colors duration-300 relative group"
                 >
                 Features
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
-                </a>
-                <a
-                href="#canvas"
-                className="hover:text-cyan-400 transition-colors duration-300 relative group"
+                </a> */}
+                <Link
+                  href={`/canvas`}
+                  className="hover:text-cyan-400 transition-colors duration-300 relative group"
                 >
-                Canvas
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
-                </a>
-                <a
+                  Canvas
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
+                </Link>
+                {/* <a
                 href="#pricing"
                 className="hover:text-cyan-400 transition-colors duration-300 relative group"
                 >
@@ -1025,7 +1026,7 @@ const CircuitCanvas: React.FC = () => {
                 >
                 Testimonials
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
-                </a>
+                </a> */}
               <button className="bg-gradient-to-r from-cyan-500 to-purple-500 px-6 py-2 rounded-full hover:from-cyan-400 hover:to-purple-400 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25">
                 Get Started
               </button>
@@ -1046,21 +1047,21 @@ const CircuitCanvas: React.FC = () => {
           }`}>
             <div className="bg-slate-800/50 backdrop-blur-md rounded-2xl p-6 border border-slate-700/50">
               <div className="space-y-4">
-                <a
+                {/* <a
                   href="#features"
                   className="block py-2 px-4 rounded-lg hover:bg-slate-700/50 transition-colors duration-300"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Features
-                </a>
-                <a
-                  href="#canvas"
-                  className="block py-2 px-4 rounded-lg hover:bg-slate-700/50 transition-colors duration-300"
-                  onClick={() => setMobileMenuOpen(false)}
+                </a> */}
+               <Link
+                  href={`/canvas`}
+                  className="hover:text-cyan-400 transition-colors duration-300 relative group"
                 >
                   Canvas
-                </a>
-                <a
+                  <span className="absolute bottom-0 mb-5 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
+                </Link>
+                {/* <a
                   href="#pricing"
                   className="block py-2 px-4 rounded-lg hover:bg-slate-700/50 transition-colors duration-300"
                   onClick={() => setMobileMenuOpen(false)}
@@ -1073,8 +1074,8 @@ const CircuitCanvas: React.FC = () => {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Testimonials
-                </a>
-                <button className="w-full bg-gradient-to-r from-cyan-500 to-purple-500 px-6 py-3 rounded-full hover:from-cyan-400 hover:to-purple-400 transition-all duration-300 transform hover:scale-105">
+                </a> */}
+                <button className="w-full mt-5 bg-gradient-to-r from-cyan-500 to-purple-500 px-6 py-3 rounded-full hover:from-cyan-400 hover:to-purple-400 transition-all duration-300 transform hover:scale-105">
                   Get Started
                 </button>
               </div>
