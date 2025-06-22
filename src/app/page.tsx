@@ -998,16 +998,34 @@ const CircuitCanvas: React.FC = () => {
             
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center space-x-8">
-              {['Features', 'Canvas', 'Pricing', 'Testimonials'].map((item) => (
                 <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="hover:text-cyan-400 transition-colors duration-300 relative group"
+                href="#features"
+                className="hover:text-cyan-400 transition-colors duration-300 relative group"
                 >
-                  {item}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
+                Features
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
                 </a>
-              ))}
+                <a
+                href="#canvas"
+                className="hover:text-cyan-400 transition-colors duration-300 relative group"
+                >
+                Canvas
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a
+                href="#pricing"
+                className="hover:text-cyan-400 transition-colors duration-300 relative group"
+                >
+                Pricing
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a
+                href="#testimonials"
+                className="hover:text-cyan-400 transition-colors duration-300 relative group"
+                >
+                Testimonials
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
+                </a>
               <button className="bg-gradient-to-r from-cyan-500 to-purple-500 px-6 py-2 rounded-full hover:from-cyan-400 hover:to-purple-400 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25">
                 Get Started
               </button>
@@ -1028,16 +1046,34 @@ const CircuitCanvas: React.FC = () => {
           }`}>
             <div className="bg-slate-800/50 backdrop-blur-md rounded-2xl p-6 border border-slate-700/50">
               <div className="space-y-4">
-                {['Features', 'Canvas', 'Pricing', 'Testimonials'].map((item) => (
-                  <a
-                    key={item}
-                    href={`#${item.toLowerCase()}`}
-                    className="block py-2 px-4 rounded-lg hover:bg-slate-700/50 transition-colors duration-300"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {item}
-                  </a>
-                ))}
+                <a
+                  href="#features"
+                  className="block py-2 px-4 rounded-lg hover:bg-slate-700/50 transition-colors duration-300"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Features
+                </a>
+                <a
+                  href="#canvas"
+                  className="block py-2 px-4 rounded-lg hover:bg-slate-700/50 transition-colors duration-300"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Canvas
+                </a>
+                <a
+                  href="#pricing"
+                  className="block py-2 px-4 rounded-lg hover:bg-slate-700/50 transition-colors duration-300"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Pricing
+                </a>
+                <a
+                  href="#testimonials"
+                  className="block py-2 px-4 rounded-lg hover:bg-slate-700/50 transition-colors duration-300"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Testimonials
+                </a>
                 <button className="w-full bg-gradient-to-r from-cyan-500 to-purple-500 px-6 py-3 rounded-full hover:from-cyan-400 hover:to-purple-400 transition-all duration-300 transform hover:scale-105">
                   Get Started
                 </button>
@@ -1143,7 +1179,7 @@ const CircuitCanvas: React.FC = () => {
               }`}
               style={{
                 // left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
+                // top: `${Math.random() * 100}%`,
                 animationDelay: `${i * 0.3}s`,
                 animationDuration: `${4 + i * 0.5}s`
               }}
