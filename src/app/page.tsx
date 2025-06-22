@@ -988,6 +988,7 @@ const CircuitCanvas: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
+                <Link href="/" className="flex items-center space-x-2">
               <div className="relative">
                 <Zap className="w-8 h-8 text-cyan-400 animate-pulse" />
                 <div className="absolute inset-0 bg-cyan-400 rounded-full blur-lg opacity-30 animate-ping"></div>
@@ -995,6 +996,7 @@ const CircuitCanvas: React.FC = () => {
               <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                 CircuitCanvas
               </h1>
+                </Link>
             </div>
             
             {/* Desktop Menu */}
@@ -1544,6 +1546,7 @@ const CircuitCanvas: React.FC = () => {
           <div className="grid md:grid-cols-5 gap-12">
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
+                <Link href="/" className="flex items-center space-x-2">
                 <div className="relative">
                   <Zap className="w-8 h-8 text-cyan-400 animate-pulse" />
                   <div className="absolute inset-0 bg-cyan-400 rounded-full blur-lg opacity-30 animate-ping"></div>
@@ -1551,6 +1554,7 @@ const CircuitCanvas: React.FC = () => {
                 <h4 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                   CircuitCanvas
                 </h4>
+                </Link>
               </div>
               <p className="text-gray-400 leading-relaxed mb-6">
                 Empowering the next generation of circuit designers with AI-powered, 

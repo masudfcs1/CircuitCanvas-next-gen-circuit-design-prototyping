@@ -25,6 +25,7 @@ import {
   Move,
   Hand
 } from 'lucide-react';
+import Link from 'next/link';
 
 interface Point {
   x: number;
@@ -596,12 +597,15 @@ const DrawingCanvas: React.FC = () => {
       <header className="bg-white shadow-lg border-b-2 border-blue-100 px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
+          <Link href="/" className="flex items-center gap-2">
             <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-2 rounded-lg">
               <Brush className="h-6 w-6 text-white" />
             </div>
             <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Canvas Drawing
             </h1>
+          </Link> 
+          
           </div>
           <div className="flex items-center gap-2 text-sm text-gray-600">
             <span>Active: {getActiveLayer().name}</span>
